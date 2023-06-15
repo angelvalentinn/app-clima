@@ -18,10 +18,10 @@ window.addEventListener('load', () => {
 
     async function pedirData(pais,region,ciudad) {
         try {
-            const apiKey = 'b3fdd3a63d9742febfc213157231406 '; 
+            const apiKey = 'b3fdd3a63d9742febfc213157231406'; 
 
             const respuesta = await fetch(
-            `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${pais} ${region} ${ciudad}&aqi=no`
+            `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${pais} ${region} ${ciudad}&aqi=no`
             );
             const resultado = await respuesta.json();
             cargarData(resultado);
