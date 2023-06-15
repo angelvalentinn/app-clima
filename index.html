@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>App clima</title>
+</head>
+
+<body>
+    
+    <main class="main">
+
+        <header class="header">
+            <h1 class="title">Buscador de clima</h1>
+            <div class="ubicacion">
+                <h3 class="pais">País: <span id="pais-deploy">...</span></h3>
+                <h3 class="region">Región: <span id="region-deploy">...</span></h3>
+                <h3 class="ciudad">Ciudad: <span id="ciudad-deploy">...</span></h3>
+            </div>
+        </header>
+
+        <section class="datos">
+            <div class="datos-principales">
+                <p class="grado-actual-icon"><img src="think.png" alt="Icono De Persona Pensando" class="icono-img-pensativo"></p>
+                <p class="grado-actual">...</p>
+            </div>
+            <div class="datos-secundarios">
+                <p class="sensacion-termica">Sensación Térmica: ...</p>
+                <p class="humedad">Humedad: ...</p>
+                <p class="precipitacion">Precipitación: ...</p>
+                <p class="velocidad-viento">Velocidad del viento: ...</p>
+                <p class="nubes">Cobertura de nubes: ...</p>
+            </div>
+            <div class="buscador">
+                <form action="" id="form">
+                    <input type="text" placeholder="Ingrese el pais" id="input-pais">
+                    <input type="text" placeholder="Ingrese la region" id="input-region">
+                    <input type="text" placeholder="Ingrese la ciudad" id="input-ciudad">
+                    <input type="submit" value="Pedir clima" id="btn-pedir-clima">    
+                </form>
+                <span class="error">Ups! Todos los campos son obligatorios*</span>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

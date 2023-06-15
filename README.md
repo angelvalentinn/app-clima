@@ -1,0 +1,1 @@
+Buscador de climas con HTML,CSS,JAVASCRIPT. Usando API del clima para hacer las peticiones.

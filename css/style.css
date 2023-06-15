@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-body: #DDDDDD;
+    --clr-p: #567189;
+    --clr-s: #97DECE;
+    --clr-w: #eee;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--clr-body);
+    color: var(--clr-w);
+    overflow-x: hidden;
+    min-height: 100vh;
+    padding: 0.5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--clr-p);
+    padding: 1rem;
+    border-radius: .8rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    text-transform: capitalize;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.header h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header h3 span {
+    text-transform:capitalize;
+    font-weight: 300;
+}
+
+.ubicacion {
+    position: relative;
+    z-index: 100;
+}
+
+.datos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.datos-principales {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-block: 2rem;
+}
+
+.grado-actual-icon {
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-98%,-50%);
+}
+
+.icono-grado-img{
+    height: 170px;
+    width: 170px;
+    opacity: .5;
+}
+
+.icono-img-pensativo {
+    width: 90px;
+    height: 90px;
+}
+
+.grado-actual {
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(0,0,0,.3);
+    opacity: .8;
+    position: absolute;
+}
+
+.datos-secundarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    position: relative;
+    z-index: 10;
+}
+
+.buscador {
+    width: 100%;
+}
+
+.error {
+    color: rgb(171, 27, 27);
+    font-size: .9rem;
+    padding-top: 1rem;
+    display: none;
+}
+
+.buscador form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.buscador input {
+    width: 100%;
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+}
+
+.buscador input:focus {
+    background-color:#efeded;
+}
+
+#btn-pedir-clima {
+    background-color: var(--clr-s);
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#btn-pedir-clima:hover {
+    width:300px;
+    transition: .4s ease;
+}
+
+@media screen and (min-width: 800px) {
+    .buscador {
+        gap: 1rem;
+    }
+}
+
+
